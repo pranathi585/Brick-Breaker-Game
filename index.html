@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Brick Breaker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen">
+    <h1>🔥 Brick Breaker X</h1>
+    <p>Last Score: <span id="lastScore">0</span></p>
+    <p>High Score: <span id="highScore">0</span></p>
+
+    <label>🎮 Difficulty:
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+        <option value="ai">AI Mode</option>
+      </select>
+    </label><br><br>
+
+    <label>🎨 Theme:
+      <select id="themeSelect">
+        <option value="space">Space</option>
+        <option value="neon">Neon</option>
+        <option value="classic" selected>Classic</option>
+      </select>
+    </label><br><br>
+
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <canvas id="gameCanvas" width="600" height="400" style="display:none;"></canvas>
+
+  <div id="achievements" style="display:none;"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
